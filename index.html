@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>আমার মনের কথা 💖</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Hind+Siliguri:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <div class="page active" id="p1">
+            <div class="gif-placeholder">❤️</div>
+            <h2>শোনো না...<br>তোমাকে একটা কথা বলার ছিল!</h2>
+            <button class="btn" onclick="nextPage(2)">কী কথা? বলো.. 🥰</button>
+        </div>
+
+        <div class="page" id="p2">
+            <div class="gif-placeholder">🙈</div>
+            <h2>আসলে অনেকদিন ধরেই বলতে চাচ্ছিলাম...</h2>
+            <button class="btn" onclick="nextPage(3)">উফফ বলোই না! 🙄</button>
+        </div>
+
+        <div class="page" id="p3">
+            <div class="gif-placeholder">💖</div>
+            <h2>"আই লাভ ইউ" <br><span class="translation">(I Love You)</span></h2>
+            <p>তুমি ও কি আমাকে ভালোবাসো? 🥺</p>
+            <div class="btn-group" id="container-action">
+                <button class="btn" id="btn-yes" onclick="nextPage(4)">হ্যাঁ! 🌸</button>
+                <button class="btn" id="btn-no" onmouseover="moveNoButton()" onclick="moveNoButton()" ontouchstart="moveNoButton(event)">না! 😡</button>
+            </div>
+        </div>
+
+        <div class="page" id="p4">
+            <div class="gif-placeholder">💍</div>
+            <h2 class="success-title">হুরেেে! 🎉🥳</h2>
+            <h2>তাহলে কবে আমাকে বিয়ে করবা বলো? 🙈❤️</h2>
+        </div>
+    </div>
+
+    <div class="watermark">@SC_Sopno</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
